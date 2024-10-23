@@ -32,5 +32,3 @@ if st.button("Book Tickets"):
 
 st.write("Hello world")
 
-
-
