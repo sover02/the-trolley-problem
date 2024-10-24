@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import re
 
-st.title("🚌 Daytrip® \n City-to-City Ticket Booking")
+st.title("🚌 Treasure State Transit \n City-to-City Ticket Booking")
 # Removes special characters from user input
 def used_input(user_name):
     return re.sub(r'[^A-Za-z0-9 ]+', '', user_name)
@@ -57,4 +57,4 @@ if st.button("Book Tickets"):
             st.error("Please select different cities for 'From' and 'To'.")
     else:
         st.error("Please enter a valid name.")
-st.write("Here at Daytrip®, we are dedicated to providing you with the best travel experience possible. We offer an alternative service to ensure your journey is comfortable and enjoyable. Our team is committed to providing you with the highest level of service throughout your trip. We look forward to helping you explore Montana and create unforgettable memories with others.")
+st.write("Here at Treasure State Transit, we are dedicated to providing you with the best travel experience possible. We offer an alternative service to ensure your journey is comfortable and enjoyable. Our team is committed to providing you with the highest level of service throughout your trip. We look forward to helping you explore Montana and create unforgettable memories with others.")
